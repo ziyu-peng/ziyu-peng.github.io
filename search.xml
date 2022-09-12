@@ -103,6 +103,68 @@ class="math inline">\(0&lt;x&lt; R\)</span>.</p></li>
       </categories>
   </entry>
   <entry>
+    <title>Countinuity of Complex Functions</title>
+    <url>/2022/09/10/countinuity-of-complex-functions/</url>
+    <content><![CDATA[<p>Let us consider the continuity of a complex function <span
+class="math display">\[f:\mathbb{C}\to\mathbb{C}.\]</span></p>
+<p>There are many ways to write the function, for instance, the usual
+way <span class="math display">\[f(x,y)=u(x,y)+iv(x,y)\]</span> and in
+the form of modulus and argument <span
+class="math display">\[f(x,y)=r(x,y)e^{i\theta(x,y)}.\]</span> We will
+show that the continuity of <span class="math inline">\(f\)</span> has
+some connection with <span class="math inline">\(u\)</span>, <span
+class="math inline">\(v\)</span>, <span
+class="math inline">\(r\)</span>, <span
+class="math inline">\(\theta\)</span>.<span id="more"></span></p>
+<h2 id="fxyuxyivxy"><span
+class="math inline">\(f(x,y)=u(x,y)+iv(x,y)\)</span></h2>
+<p>Here is our result:</p>
+<blockquote>
+<p><span class="math inline">\(f(x,y)\)</span> is continuous at <span
+class="math inline">\((x_0,y_0)\)</span> if and only if <span
+class="math inline">\(u(x,y)\)</span> and <span
+class="math inline">\(v(x,y)\)</span> are continuous at <span
+class="math inline">\((x_0,y_0)\)</span>.</p>
+</blockquote>
+<p>Proof. We only need to notice <span
+class="math display">\[\begin{align}&amp;\lvert
+u(x,y)-u(x_0,y_0)\rvert\quad(or \lvert
+v(x,y)-v(x_0,y_0)\rvert)\\\le&amp;\lvert f(x,y)-f(x_0,y_0)\rvert\\
+\le&amp;\lvert u(x,y)-u(x_0,y_0)\rvert+\lvert
+v(x,y)-v(x_0,y_0)\rvert.\end{align}\]</span></p>
+<h2 id="fxyrxyeithetaxy"><span
+class="math inline">\(f(x,y)=r(x,y)e^{i\theta(x,y)}\)</span></h2>
+<p>We require that <span
+class="math inline">\(\theta(x,y)\in[0,2\pi)\)</span>.</p>
+<blockquote>
+<p>Suppose <span class="math inline">\(r(x,y)\ne0\)</span>. <span
+class="math inline">\(f(x,y)\)</span> is continuous at <span
+class="math inline">\((x_0,y_0)\)</span> if and only if <span
+class="math inline">\(r(x,y)\)</span> and <span
+class="math inline">\(\theta(x,y)\)</span> are continuous at <span
+class="math inline">\((x_0,y_0)\)</span>.</p>
+</blockquote>
+<p>Proof. The direction (<span
+class="math inline">\(\Longleftarrow\)</span>) is obvious. We shall only
+prove the opposite. We have the following inequality <span
+class="math display">\[\begin{align}&amp;\lvert
+f(x,y)-f(x_0,y_0)\rvert\\=&amp;\lvert
+r(x,y)e^{i\theta(x,y)}-r(x_0,y_0)e^{i\theta(x_0,y_0)}\rvert\\\ge&amp;\lvert
+r(x,y)-r(x_0,y_0)\rvert.\end{align}\]</span></p>
+<p>This shows that <span class="math inline">\(r(x,y)\)</span> is
+continuous at <span class="math inline">\((x_0,y_0)\)</span>. The
+theorem on the continuity of the composition of functions shows that
+<span class="math inline">\(\theta(x,y)\)</span> is continous at <span
+class="math inline">\((x_0,y_0)\)</span> (this is where we use <span
+class="math inline">\(r(x,y)\ne0\)</span>).</p>
+]]></content>
+      <categories>
+        <category>Mathematics</category>
+        <category>Analysis</category>
+        <category>Complex Analysis</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Minkowski&#39;s inequality and Hölder&#39;s inequality</title>
     <url>/2022/08/19/minkowski-and-holder-inequality/</url>
     <content><![CDATA[<p>We introduce here two famous inequalities in analysis --- Minkowski's
@@ -213,68 +275,6 @@ triangle inequality easy to check.</p>
         <category>Mathematics</category>
         <category>Analysis</category>
         <category>Mathematical analysis</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Countinuity of Complex Functions</title>
-    <url>/2022/09/10/countinuity-of-complex-functions/</url>
-    <content><![CDATA[<p>Let us consider the continuity of a complex function <span
-class="math display">\[f:\mathbb{C}\to\mathbb{C}.\]</span></p>
-<p>There are many ways to write the function, for instance, the usual
-way <span class="math display">\[f(x,y)=u(x,y)+iv(x,y)\]</span> and in
-the form of modulus and argument <span
-class="math display">\[f(x,y)=r(x,y)e^{i\theta(x,y)}.\]</span> We will
-show that the continuity of <span class="math inline">\(f\)</span> has
-some connection with <span class="math inline">\(u\)</span>, <span
-class="math inline">\(v\)</span>, <span
-class="math inline">\(r\)</span>, <span
-class="math inline">\(\theta\)</span>.<span id="more"></span></p>
-<h2 id="fxyuxyivxy"><span
-class="math inline">\(f(x,y)=u(x,y)+iv(x,y)\)</span></h2>
-<p>Here is our result:</p>
-<blockquote>
-<p><span class="math inline">\(f(x,y)\)</span> is continuous at <span
-class="math inline">\((x_0,y_0)\)</span> if and only if <span
-class="math inline">\(u(x,y)\)</span> and <span
-class="math inline">\(v(x,y)\)</span> are continuous at <span
-class="math inline">\((x_0,y_0)\)</span>.</p>
-</blockquote>
-<p>Proof. We only need to notice <span
-class="math display">\[\begin{align}&amp;\lvert
-u(x,y)-u(x_0,y_0)\rvert\quad(or \lvert
-v(x,y)-v(x_0,y_0)\rvert)\\\le&amp;\lvert f(x,y)-f(x_0,y_0)\rvert\\
-\le&amp;\lvert u(x,y)-u(x_0,y_0)\rvert+\lvert
-v(x,y)-v(x_0,y_0)\rvert.\end{align}\]</span></p>
-<h2 id="fxyrxyeithetaxy"><span
-class="math inline">\(f(x,y)=r(x,y)e^{i\theta(x,y)}\)</span></h2>
-<p>We require that <span
-class="math inline">\(\theta(x,y)\in[0,2\pi)\)</span>.</p>
-<blockquote>
-<p>Suppose <span class="math inline">\(r(x,y)\ne0\)</span>. <span
-class="math inline">\(f(x,y)\)</span> is continuous at <span
-class="math inline">\((x_0,y_0)\)</span> if and only if <span
-class="math inline">\(r(x,y)\)</span> and <span
-class="math inline">\(\theta(x,y)\)</span> are continuous at <span
-class="math inline">\((x_0,y_0)\)</span>.</p>
-</blockquote>
-<p>Proof. The direction (<span
-class="math inline">\(\Longleftarrow\)</span>) is obvious. We shall only
-prove the opposite. We have the following inequality <span
-class="math display">\[\begin{align}&amp;\lvert
-f(x,y)-f(x_0,y_0)\rvert\\=&amp;\lvert
-r(x,y)e^{i\theta(x,y)}-r(x_0,y_0)e^{i\theta(x_0,y_0)}\rvert\\\ge&amp;\lvert
-r(x,y)-r(x_0,y_0)\rvert.\end{align}\]</span></p>
-<p>This shows that <span class="math inline">\(r(x,y)\)</span> is
-continuous at <span class="math inline">\((x_0,y_0)\)</span>. The
-theorem on the continuity of the composition of functions shows that
-<span class="math inline">\(\theta(x,y)\)</span> is continous at <span
-class="math inline">\((x_0,y_0)\)</span> (this is where we use <span
-class="math inline">\(r(x,y)\ne0\)</span>).</p>
-]]></content>
-      <categories>
-        <category>Mathematics</category>
-        <category>Analysis</category>
-        <category>Complex Analysis</category>
       </categories>
   </entry>
 </search>
