@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>$K[x]$ and $K[[x]]$ are integral domains</title>
+    <url>/2022/09/10/K%5Bx%5D-and-K%5B%5Bx%5D%5D-are-integral-domains/</url>
+    <content><![CDATA[<p>Let <span class="math inline">\(K\)</span> be a field. It is
+well-known that the collection of polynomials <span
+class="math inline">\(K[x]\)</span> and the collection of formal power
+series <span class="math inline">\(K[[x]]\)</span>, are rings over <span
+class="math inline">\(K\)</span>. We will show that they are integral
+domains, i.e, they contain no zero divisors. As
+<a href="https://en.wikipedia.org/wiki/Ernest_Vinberg">Professor
+Vinberg</a> points out, the two proofs are different. However, they are
+similar in some ways.<span id="more"></span></p>
+<h2 id="kx-is-an-integral-domain"><span
+class="math inline">\(K[x]\)</span> is an integral domain</h2>
+<p>We are familiar with the notion of the degree of a polynomial.
+Usually, we define the degree of the zero polynomial to be <span
+class="math inline">\(-\infty\)</span>. Then the following equality
+holds for all <span class="math inline">\(f,g\in K[x]\)</span>: <span
+class="math display">\[\mathrm{deg}(fg)=\mathrm{deg}f+\mathrm{deg}g.\]</span></p>
+<p>Now suppose <span class="math inline">\(fg=0\)</span>, i.e. <span
+class="math inline">\(\mathrm{deg}(fg)=-\infty\)</span>. Then we must
+have <span class="math inline">\(f=0\)</span> or <span
+class="math inline">\(g=0\)</span>. If is not so, we have <span
+class="math inline">\(\mathrm{deg}f\ge0\)</span> and <span
+class="math inline">\(\mathrm{deg}g\ge 0\)</span>, which yields <span
+class="math inline">\(-\infty\ge0\)</span>. This is absurd. The result
+follows.</p>
+<h2 id="kx-is-an-integral-domain-1"><span
+class="math inline">\(K[[x]]\)</span> is an integral domain</h2>
+<p>In formal power series, we no longer have the notion of degrees.
+However, as we define the degree of a polynomial to be the highest
+nonzero power of <span class="math inline">\(x\)</span>, we define for
+formal power series its order, in an opposite manner:</p>
+<blockquote>
+<p>(<strong>Definition</strong>) The order <span
+class="math inline">\(\omega(S)\)</span> of a formal power series <span
+class="math inline">\(S(x)=\sum_{n\ge 0}a_nx^n\)</span> is the least
+<span class="math inline">\(n\)</span> such that <span
+class="math inline">\(a_n\ne0\)</span>. Of course, the above definition
+only makes sense when <span class="math inline">\(S\ne0\)</span>. Thus,
+we define <span class="math inline">\(\omega(0)=+\infty\)</span> to make
+it complete.</p>
+</blockquote>
+<p>Now suppose <span class="math inline">\(S(x)=\sum_{n\ge
+0}a_nx^n\)</span>, <span class="math inline">\(T(x)=\sum_{n\ge
+0}b_nx^n\)</span> are not zero. We shall prove that <span
+class="math inline">\((ST)(x)=\sum_{n\ge 0}c_nx^n\ne0\)</span>. Indeed,
+let <span class="math inline">\(p=\omega(S)\)</span>, <span
+class="math inline">\(q=\omega(T)\)</span>. Then <span
+class="math inline">\(p,q\)</span> are finite. We can see that <span
+class="math inline">\(c_n=0\)</span> for <span
+class="math inline">\(n&lt;p+q\)</span> and <span
+class="math inline">\(c_{p+q}=a_pb_q\ne0\)</span>, which exactly mean
+that <span class="math inline">\(\omega(ST)=p+q&lt;+\infty\)</span>,
+i.e, <span class="math inline">\(ST\ne0\)</span>. This completes the
+proof.</p>
+]]></content>
+      <categories>
+        <category>Mathematics</category>
+        <category>Algebra</category>
+        <category>Modern Algebra</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Minkowski&#39;s inequality and Hölder&#39;s inequality</title>
+    <url>/2022/08/19/minkowski-and-holder-inequality/</url>
+    <content><![CDATA[<p>We introduce here two famous inequalities in analysis --- Minkowski's
+inequality and Hölder's inequality.<span id="more"></span></p>
+<h2 id="hölders-inequality">Hölder's inequality</h2>
+<p>Since our proof of Minkowski's inequality uses Hölder's inequality,
+we shall introduce Hölder's inequality first.</p>
+<blockquote>
+<p>(<strong>Hölder's inequality</strong>) Let <span
+class="math inline">\(p\)</span>, <span class="math inline">\(q\)</span>
+be positive real numbers such that <span
+class="math inline">\(\frac{1}{p}+\frac{1}{q}=1\)</span>. Suppose <span
+class="math inline">\(f\)</span> and <span
+class="math inline">\(g\)</span> are continous functions on <span
+class="math inline">\([a,b]\)</span>. Then <span
+class="math display">\[\int_a^b\lvert f(x)g(x)\rvert
+dx\le\left(\int_a^b\lvert f(x)\rvert^p
+dx\right)^{1/p}\left(\int_a^b\lvert g(x)\rvert^q
+dx\right)^{1/q}.\]</span></p>
+</blockquote>
+<p>To prove it, we need the following</p>
+<blockquote>
+<p>(<strong>Young's inequality</strong>) Let <span
+class="math inline">\(p\)</span>, <span class="math inline">\(q\)</span>
+be positive real numbers such that <span
+class="math inline">\(\frac{1}{p}+\frac{1}{q}=1\)</span>. Suppose <span
+class="math inline">\(u,v\ge 0\)</span>. Then <span
+class="math display">\[uv\le\frac{u^p}{p}+\frac{v^q}{q}.\]</span></p>
+</blockquote>
+<p>Proof. If one of <span class="math inline">\(u\)</span> and <span
+class="math inline">\(v\)</span> are zero, there is nothing to prove.
+Suppose <span class="math inline">\(u,v&gt;0\)</span>. We know very well
+that <span class="math inline">\(y=\ln x\)</span> is a concave function.
+Thus, <span
+class="math display">\[\ln\left(\frac{u^p}{p}+\frac{v^q}{q}\right)\ge\frac{1}{p}\ln
+u^p+\frac{1}{q}\ln v^q=\ln (uv).\]</span> Since <span
+class="math inline">\(y=\ln x\)</span> is monotonically increasing, the
+result follows.<span class="math inline">\(\square\)</span></p>
+<p>Proof of Hölder's inequality. If <span
+class="math inline">\(f\equiv0\)</span> or <span
+class="math inline">\(g\equiv0\)</span>, Hölder's inequality holds
+plainly. Otherwise, <span class="math inline">\(\int_a^b\lvert
+f(x)\rvert^p dx\)</span> and <span class="math inline">\(\int_a^b\lvert
+g(x)\rvert^q dx\)</span> are not zero. We can assume that they are both
+<span class="math inline">\(1\)</span> (this is where the so-called
+homogenity of inequality plays its role). By Young's inequality, <span
+class="math display">\[\lvert f(x)g(x)\rvert\le\frac{\lvert
+f(x)\rvert^p}{p}+\frac{\lvert g(x)\rvert^q}{q}.\]</span> Integrating on
+<span class="math inline">\([a,b]\)</span>, we obtain <span
+class="math display">\[
+\begin{align}
+\int_a^b\lvert f(x)g(x)\rvert dx
+&amp;\le\int_a^b\left(\frac{\lvert f(x)\rvert^p}{p}+\frac{\lvert
+g(x)\rvert^q}{q}\right)\\
+&amp;=\frac{1}{p}+\frac{1}{q}\\
+&amp;=1,
+\end{align}
+\]</span> as desired.<span class="math inline">\(\square\)</span></p>
+<h2 id="minkowskis-inequality">Minkowski's inequality</h2>
+<p>We now state and prove Minkowski's inequality.</p>
+<blockquote>
+<p>(<strong>Minkowski's inequality</strong>) Let <span
+class="math inline">\(p\ge1\)</span> be a real number. Suppose <span
+class="math inline">\(f\)</span> and <span
+class="math inline">\(g\)</span> are continous functions on <span
+class="math inline">\([a,b]\)</span>. Then <span
+class="math display">\[\left(\int_{a}^{b}|f(x)+g(x)|^{p} d
+x\right)^{\frac{1}{p}} \leq\left(\int_{a}^{b}|f(x)|^{p} d
+x\right)^{\frac{1}{p}}+\left(\int_{a}^{b}|g(x)|^{p} d
+x\right)^{\frac{1}{p}}.\]</span></p>
+</blockquote>
+<p>Proof. If <span class="math inline">\(p=1\)</span>, this is a direct
+result of the triangle inequality in <span
+class="math inline">\(\mathbb{R}\)</span>. Suppose <span
+class="math inline">\(p&gt;1\)</span>. Then we have <span
+class="math display">\[
+\begin{align}
+\int\lvert f+g\rvert^p
+&amp;=\int\lvert f+g\rvert\lvert f+g\rvert^{p-1}\\
+&amp;\le\int\lvert f\rvert\lvert f+g\rvert^{p-1}+\lvert g\rvert\lvert
+f+g\rvert^{p-1}\\
+&amp;\le\left(\left(\int\lvert f\rvert^p\right)^{1/p}+\left(\int\lvert
+q\rvert^p\right)^{1/p}\right)\left(\int\lvert
+f+g\rvert^p\right)^{1-1/p}.
+\end{align}
+\]</span> Simple calculations give us the desired result.<span
+class="math inline">\(\square\)</span></p>
+<h2 id="specializations-in-discrete-forms">Specializations in discrete
+forms</h2>
+<p>Obviously, both Minkowski's inequality and Hölder's inequality can be
+written in discrete forms and the proofs differ very little.</p>
+<h2 id="applications">Applications</h2>
+<p>Here we introduce the applications of Minkowski's inequality. In
+fact, it is indispensible in <span class="math inline">\(L^p\)</span>
+spaces. Indeed, one can define the so-called <span
+class="math inline">\(L^p\)</span> metric <span
+class="math inline">\((1\le p\le+\infty)\)</span> on the space of
+continuous functions <span class="math inline">\(C[a,b]\)</span>: <span
+class="math display">\[d(f,g)=\left(\int_a^b\lvert
+f(x)-g(x)\rvert^p\right)^{1/p}.\]</span> To verify this, we only need to
+notice that the triangle inequality follows directly from Minkowski's
+inequality if <span class="math inline">\(p&lt;+\infty\)</span> and that
+<span class="math inline">\(d(f,g)=\sup\lvert f(x)-g(x)\rvert\)</span>
+if <span class="math inline">\(p=+\infty\)</span>, which makes the
+triangle inequality easy to check.</p>
+]]></content>
+      <categories>
+        <category>Mathematics</category>
+        <category>Analysis</category>
+        <category>Mathematical analysis</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Countinuity of Complex Functions</title>
+    <url>/2022/09/10/countinuity-of-complex-functions/</url>
+    <content><![CDATA[<p>Let us consider the continuity of a complex function <span
+class="math display">\[f:\mathbb{C}\to\mathbb{C}.\]</span></p>
+<p>There are many ways to write the function, for instance, the usual
+way <span class="math display">\[f(x,y)=u(x,y)+iv(x,y)\]</span> and in
+the form of modulus and argument <span
+class="math display">\[f(x,y)=r(x,y)e^{i\theta(x,y)}.\]</span> We will
+show that the continuity of <span class="math inline">\(f\)</span> has
+some connection with <span class="math inline">\(u\)</span>, <span
+class="math inline">\(v\)</span>, <span
+class="math inline">\(r\)</span>, <span
+class="math inline">\(\theta\)</span>.<span id="more"></span></p>
+<h2 id="fxyuxyivxy"><span
+class="math inline">\(f(x,y)=u(x,y)+iv(x,y)\)</span></h2>
+<p>Here is our result:</p>
+<blockquote>
+<p><span class="math inline">\(f(x,y)\)</span> is continuous at <span
+class="math inline">\((x_0,y_0)\)</span> if and only if <span
+class="math inline">\(u(x,y)\)</span> and <span
+class="math inline">\(v(x,y)\)</span> are continuous at <span
+class="math inline">\((x_0,y_0)\)</span>.</p>
+</blockquote>
+<p>Proof. We only need to notice <span
+class="math display">\[\begin{align}&amp;\lvert
+u(x,y)-u(x_0,y_0)\rvert\quad(or \lvert
+v(x,y)-v(x_0,y_0)\rvert)\\\le&amp;\lvert f(x,y)-f(x_0,y_0)\rvert\\
+\le&amp;\lvert u(x,y)-u(x_0,y_0)\rvert+\lvert
+v(x,y)-v(x_0,y_0)\rvert.\end{align}\]</span></p>
+<h2 id="fxyrxyeithetaxy"><span
+class="math inline">\(f(x,y)=r(x,y)e^{i\theta(x,y)}\)</span></h2>
+<p>We require that <span
+class="math inline">\(\theta(x,y)\in[0,2\pi)\)</span>.</p>
+<blockquote>
+<p>Suppose <span class="math inline">\(r(x,y)\ne0\)</span>. <span
+class="math inline">\(f(x,y)\)</span> is continuous at <span
+class="math inline">\((x_0,y_0)\)</span> if and only if <span
+class="math inline">\(r(x,y)\)</span> and <span
+class="math inline">\(\theta(x,y)\)</span> are continuous at <span
+class="math inline">\((x_0,y_0)\)</span>.</p>
+</blockquote>
+<p>Proof. The direction (<span
+class="math inline">\(\Longleftarrow\)</span>) is obvious. We shall only
+prove the opposite. We have the following inequality <span
+class="math display">\[\begin{align}&amp;\lvert
+f(x,y)-f(x_0,y_0)\rvert\\=&amp;\lvert
+r(x,y)e^{i\theta(x,y)}-r(x_0,y_0)e^{i\theta(x_0,y_0)}\rvert\\\ge&amp;\lvert
+r(x,y)-r(x_0,y_0)\rvert.\end{align}\]</span></p>
+<p>This shows that <span class="math inline">\(r(x,y)\)</span> is
+continuous at <span class="math inline">\((x_0,y_0)\)</span>. The
+theorem on the continuity of the composition of functions shows that
+<span class="math inline">\(\theta(x,y)\)</span> is continous at <span
+class="math inline">\((x_0,y_0)\)</span> (this is where we use <span
+class="math inline">\(r(x,y)\ne0\)</span>).</p>
+]]></content>
+      <categories>
+        <category>Mathematics</category>
+        <category>Analysis</category>
+        <category>Complex Analysis</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>An integral concerning logarithms</title>
+    <url>/2022/08/14/an-integral-concerning-logarithms/</url>
+    <content><![CDATA[<p>Today, <a href="https://www.fjtcin.com/" target="_blank">fjtcin</a>
+asked me an integral: <span
+class="math display">\[\int_0^1\frac{\ln(x+1)}{x}dx.\]</span><span id="more"></span></p>
+<p>The motivation is clear: expanding <span
+class="math inline">\(\ln(1+x)\)</span> into Taylor's series. Following
+this, we may calculate as below: <span class="math display">\[
+\begin{align}
+\int_0^1\frac{\ln(x+1)}{x}dx
+&amp;=\int_0^1\left(\sum_{n=1}^\infty\frac{(-1)^{n-1}}{n}x^{n-1}\right)dx\\
+&amp;=\sum_{n=1}^\infty\int_0^1\frac{(-1)^{n-1}}{n}x^{n-1}dx\\
+&amp;=\sum_{n=1}^\infty\frac{(-1)^{n-1}}{n^2}\\
+&amp;=\frac{\pi^2}{12}.
+\end{align}
+\]</span></p>
+<p>Still, things get complicated when infinity comes in. The validity of
+our calculation remains to be checked. It is easily verified by the
+following propositions.</p>
+<p>Suppose the radius of convergence of a power series is <span
+class="math inline">\(R\)</span>.Then</p>
+<blockquote>
+<ul>
+<li><p>If it is convergent when <span
+class="math inline">\(x=R\)</span>, then its sum is left-continuous at
+<span class="math inline">\(x=R\)</span>.</p></li>
+<li><p>We can integrate term by term on <span
+class="math inline">\([0,x]\)</span> if <span
+class="math inline">\(0&lt;x&lt; R\)</span>.</p></li>
+</ul>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Mathematics</category>
+        <category>Analysis</category>
+        <category>Mathematical analysis</category>
+      </categories>
+  </entry>
+</search>
