@@ -64,6 +64,45 @@ proof.</p>
       </categories>
   </entry>
   <entry>
+    <title>An integral concerning logarithms</title>
+    <url>/2022/08/14/an-integral-concerning-logarithms/</url>
+    <content><![CDATA[<p>Today, <a href="https://www.fjtcin.com/" target="_blank">fjtcin</a>
+asked me an integral: <span
+class="math display">\[\int_0^1\frac{\ln(x+1)}{x}dx.\]</span><span id="more"></span></p>
+<p>The motivation is clear: expanding <span
+class="math inline">\(\ln(1+x)\)</span> into Taylor's series. Following
+this, we may calculate as below: <span class="math display">\[
+\begin{align}
+\int_0^1\frac{\ln(x+1)}{x}dx
+&amp;=\int_0^1\left(\sum_{n=1}^\infty\frac{(-1)^{n-1}}{n}x^{n-1}\right)dx\\
+&amp;=\sum_{n=1}^\infty\int_0^1\frac{(-1)^{n-1}}{n}x^{n-1}dx\\
+&amp;=\sum_{n=1}^\infty\frac{(-1)^{n-1}}{n^2}\\
+&amp;=\frac{\pi^2}{12}.
+\end{align}
+\]</span></p>
+<p>Still, things get complicated when infinity comes in. The validity of
+our calculation remains to be checked. It is easily verified by the
+following propositions.</p>
+<p>Suppose the radius of convergence of a power series is <span
+class="math inline">\(R\)</span>.Then</p>
+<blockquote>
+<ul>
+<li><p>If it is convergent when <span
+class="math inline">\(x=R\)</span>, then its sum is left-continuous at
+<span class="math inline">\(x=R\)</span>.</p></li>
+<li><p>We can integrate term by term on <span
+class="math inline">\([0,x]\)</span> if <span
+class="math inline">\(0&lt;x&lt; R\)</span>.</p></li>
+</ul>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Mathematics</category>
+        <category>Analysis</category>
+        <category>Mathematical analysis</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Countinuity of Complex Functions</title>
     <url>/2022/09/10/countinuity-of-complex-functions/</url>
     <content><![CDATA[<p>Let us consider the continuity of a complex function <span
@@ -123,45 +162,6 @@ class="math inline">\(r(x,y)\ne0\)</span>).</p>
         <category>Mathematics</category>
         <category>Analysis</category>
         <category>Complex Analysis</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>An integral concerning logarithms</title>
-    <url>/2022/08/14/an-integral-concerning-logarithms/</url>
-    <content><![CDATA[<p>Today, <a href="https://www.fjtcin.com/" target="_blank">fjtcin</a>
-asked me an integral: <span
-class="math display">\[\int_0^1\frac{\ln(x+1)}{x}dx.\]</span><span id="more"></span></p>
-<p>The motivation is clear: expanding <span
-class="math inline">\(\ln(1+x)\)</span> into Taylor's series. Following
-this, we may calculate as below: <span class="math display">\[
-\begin{align}
-\int_0^1\frac{\ln(x+1)}{x}dx
-&amp;=\int_0^1\left(\sum_{n=1}^\infty\frac{(-1)^{n-1}}{n}x^{n-1}\right)dx\\
-&amp;=\sum_{n=1}^\infty\int_0^1\frac{(-1)^{n-1}}{n}x^{n-1}dx\\
-&amp;=\sum_{n=1}^\infty\frac{(-1)^{n-1}}{n^2}\\
-&amp;=\frac{\pi^2}{12}.
-\end{align}
-\]</span></p>
-<p>Still, things get complicated when infinity comes in. The validity of
-our calculation remains to be checked. It is easily verified by the
-following propositions.</p>
-<p>Suppose the radius of convergence of a power series is <span
-class="math inline">\(R\)</span>.Then</p>
-<blockquote>
-<ul>
-<li><p>If it is convergent when <span
-class="math inline">\(x=R\)</span>, then its sum is left-continuous at
-<span class="math inline">\(x=R\)</span>.</p></li>
-<li><p>We can integrate term by term on <span
-class="math inline">\([0,x]\)</span> if <span
-class="math inline">\(0&lt;x&lt; R\)</span>.</p></li>
-</ul>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Mathematics</category>
-        <category>Analysis</category>
-        <category>Mathematical analysis</category>
       </categories>
   </entry>
   <entry>
